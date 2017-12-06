@@ -1,0 +1,25 @@
+﻿@model RandomList.Models.RandomData
+
+@{
+    ViewData["Title"] = "Generated Random List";
+}
+
+<h2>@ViewData["Title"]</h2>
+<br />
+
+<p>    
+    <a asp-action="Create" class="btn btn-primary btn-lg">
+        <span class="glyphicon glyphicon-refresh"></span> Refresh
+    </a>  
+</p>
+<br />
+
+<span>
+    @Model.ToString()    
+</span>
+
+<br />
+<br />
+<div>
+    <a asp-action="Index">Back</a>
+</div>
