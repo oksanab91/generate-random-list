@@ -2,12 +2,26 @@
     ViewData["Title"] = "Random List Generator";
 }
 
-<h2>@ViewData["Title"]</h2>
-<br/>
+<div class="page-header headerBottomLine">
+    <h2>@ViewData["Title"]</h2>
+</div>
 
-<a asp-action="Create" class="btn btn-primary btn-lg">
-    <span class="glyphicon glyphicon-play"></span> Generate
-</a>  
+@*Run generator*@
+<div class="row">
+    <div class="col-xs-12 col-md-3">
+        <a asp-action="Create" class="btn btn-primary btn-lg btn-block">
+            <span class="glyphicon glyphicon-play"></span> Run
+        </a>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <img class="img-responsive" src="~/images/pay-2446669_1280.jpg" alt="Numbers" />
+    </div>
+</div>
+<br />
+
 
 
 

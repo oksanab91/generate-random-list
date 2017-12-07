@@ -17,8 +17,8 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<body>    
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #2851a4;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,34 +26,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>                
+                </button>
                 <a asp-area="" asp-controller="RandomList" asp-action="Index" class="navbar-brand">Random List</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">                    
+                <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="RandomList" asp-action="About">About</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" style="background-color: #f2f2f3;">
         <b><span class="text-danger">@TempData["message"]</span></b>        
 
         @RenderBody()
-        <hr />
+        
         <footer>
             <div class="row">
-                <div class="col-xs-6 col-md-6">
-                    @* this block is also 6 columns wide *@
-                    <p class="text-left">&copy; 2017 - RandomList</p>
-                </div>
-
-                <div class="col-xs-6 col-md-6">
-                    @* this block is also 6 columns wide *@
-                    <ul class="pull-right list-inline">
-                        <li><a asp-area="" asp-controller="RandomList" asp-action="About">About</a></li>          
-                    </ul>
-                </div>
+                <div class="col-xs-12 col-md-12">                    
+                    <p class="text-center">&copy; 2017 - RandomList</p>
+                </div>                
             </div>
         </footer>
     </div>

@@ -4,21 +4,32 @@
     ViewData["Title"] = "Generated Random List";
 }
 
-<h2>@ViewData["Title"]</h2>
-<br />
+<div class="page-header headerBottomLine">
+    <h2>@ViewData["Title"]</h2>
+</div>
 
-<p>    
-    <a asp-action="Create" class="btn btn-primary btn-lg">
-        <span class="glyphicon glyphicon-refresh"></span> Refresh
-    </a>  
-</p>
-<br />
-
-<span>
-    @Model.ToString()    
-</span>
+<div class="row">
+    <div class="col-xs-12 col-md-3">
+        <a asp-action="Create" class="btn btn-primary btn-lg btn-block">
+            <span class="glyphicon glyphicon-repeat"></span> Repeat
+        </a>
+    </div>  
+</div>
 
 <br />
+
+<div class="row">
+    <div class="col-xs-12 col-md-12 text-justify randomItemContainer">
+        @{
+            foreach (var item in Model.Items)
+            {
+                <span class="randomItemText" style="background-color: #@item.ItemHexValue">
+                    @item.ItemValue
+                </span>
+            }
+        }
+    </div>
+</div>
 <br />
 <div>
     <a asp-action="Index">Back</a>
