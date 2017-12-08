@@ -7,8 +7,8 @@ Each number in the list is unique and is between 1 and 10,000 (inclusive).
 ## Build
 
 - The App is built in Visual Studio 2015. <br/>
-- NuGetPackage Manager is used to install .Net Core 1 components. <br/>    
-- Bower Manager - to add additional packages. <br/>
+- NuGetPackage Manager is used to install .Net Core 1 package. <br/>    
+- Bower Manager - to add font awsome dependency. <br/>
 - Bootstrap toolkit - to design responsive system. <br/>
 
 ## Logic in short
