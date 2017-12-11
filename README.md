@@ -24,4 +24,5 @@ The solution implements responsive design and mobile-first strategy.
 It is a TDD application using xUnit.<br/><br/>
 The system should pass the following tests:<br/>
 - All numbers must be unique;<br/>
-- All numbers must be in the range of 1 - 10000 inclusive.
+- All numbers must be in the range of 1 - 10000 inclusive;<br/>
+- Element color must be a valid RGBA string.

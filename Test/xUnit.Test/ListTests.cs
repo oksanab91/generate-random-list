@@ -38,7 +38,7 @@ namespace Tests
             rnd.SortRandomData();
             Assert.Equal(rnd.Min(), minItem);
         }
-        // Min number in the list must be 10000
+        // Max number in the list must be 10000
         [Fact]
         public void RandomListMaxValueMustBeEqual10000()
         {
