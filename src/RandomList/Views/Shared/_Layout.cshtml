@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>@ViewData["Title"] - Random List</title>
 
     <environment names="Development">
@@ -32,6 +34,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="RandomList" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="RandomList" asp-action="Create">Generate List</a></li>
                 </ul>
             </div>
         </div>

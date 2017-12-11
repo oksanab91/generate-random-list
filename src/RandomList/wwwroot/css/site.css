@@ -34,24 +34,19 @@ textarea {
     border-bottom: 1px solid #e0e0eb;
 }
 
-/*Container for random number elements*/ 
-.randomItemContainer {
-    background-color:white; 
-    padding: 10px 0;
+/*Display random number element with some overlapping*/
+.randomItemText {
+    font-family: monospace;
+    color: black;
+    margin: 0;
+    font-weight: bold;    
+    padding: 15px 3px;
+    line-height: 3em;
 }
 
-/*Random number element*/ 
-.randomItemText{
-    font-family: monospace;    
-    margin: 3px; 
-    border-radius: 3px; 
-    padding: 3px;
-    line-height: 2em;   
-}
 /*Update random number element*/
 .randomItemText:hover {   
     background-color: white !important;
-    font-weight: bold;
 }
 
 .randomPageFooter {
@@ -71,9 +66,11 @@ textarea {
     display: none
   }
 
-  .randomItemContainer {
-    background-color:#f2f2f3; 
-    padding: 10px;
+  body{
+      text-transform:uppercase;
   }
 
+  h2{
+      text-align: center;
+  } 
 }
